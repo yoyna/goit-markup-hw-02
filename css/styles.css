@@ -36,7 +36,7 @@ body {
     letter-spacing: 0.03em;
 }
 
-span {
+.logo-color-part {
     color: var(--accent-color);
 }
 
