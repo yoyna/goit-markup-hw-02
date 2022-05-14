@@ -10,94 +10,59 @@
 </head>
 <body>
     <header class="header">
-        <nav>
-            <a href="/" class="logo link"><span class="logo-color-part">Web</span>Studio</a>
-            <ul class="menu list">
-               <li><a href="./index.html" class="nav-link link current">Студия</a></li> 
-               <li><a href="./portfolio.html" class="nav-link link">Портфолио</a></li>
-               <li><a href="" class="nav-link link">Контакты</a></li>
-            </ul>
-        </nav>
-        <ul class="list">
-            <li><a href="mailto:info@example.com" class="contacts link">info@example.com</a></li>
-            <li><a href="tel:+380961111111" class="contacts link">+38 096 111 11 11</a></li>
-        </ul>
+        <div class="container header-container">
+            <nav class="navigation">
+                <a href="/" class="logo link">Web<span class="navigation__logo_theme_black">Studio</span></a>
+                <ul class="nav-list list">
+                   <li class="nav-list__item"><a href="./index.html" class="nav-list__link link current">Студия</a></li> 
+                   <li class="nav-list__item"><a href="./portfolio.html" class="nav-list__link link">Портфолио</a></li>
+                   <li class="nav-list__item"><a href="" class="nav-list__link link">Контакты</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <main>
         <section class="hero">
-            <h1 class="main-title">Эффективные решения<br>для вашего бизнеса</h1>
-            <button type="button" class="hero-buttom">Заказать услугу</button>
+            <div class="hero-container container">
+
+                <div class="hero-container__title">
+                    <h1 class="main-title">Complex preparation for English UPE</h1>
+                    <p class="hero-container__grey-text">It won’t be easy.</p>
+                    <p class="hero-container__text">But you are guaranteed to get<span class="hero-container__text_orrange">+25 points</span></p>
+                    <button type="button" class="hero-button">
+                        <a href="#contacts" class="hero-button__link link">i want a free lesson</a>
+                    </button>
+                </div>
+
+                <div class="hero-container__img">
+                    <picture class="hero-img">
+                        <source
+                            srcset="./img/hero-desktop.jpg 1x, ./img/hero-desktop@2x.jpg 2x"
+                            media="(min-width: 1680px)"
+                        />
+                        
+                        <source
+                            srcset="./img/hero-tablet.jpg 1x, ./img/hero-tablet@2x.jpg 2x"
+                            media="(min-width: 768px)"
+                        />
+    
+                        <source
+                            srcset="./img/hero-mobile.jpg 1x, ./img/hero-mobile@2x.jpg 2x"
+                            media="(max-width: 767px)"
+                        />
+                        <img src="./img/hero-desktop.jpg" alt="hero-main-picture">
+                    </picture> 
+                </div>   
+                                                    
+            </div>
         </section>
 
-        <section class="feature">
-            <h2 class="feature-main-title">Наши преимущества</h2>
-            <ul class="list">
-                <li>
-                    <h3 class="feature-title">Внимание к деталям</h3>
-                    <p class="feature-description">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
-                </li>
-                <li>
-                    <h3 class="feature-title">Пунктуальность</h3>
-                    <p class="feature-description">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
-                </li>
-                <li>
-                    <h3 class="feature-title">Планирование</h3>
-                    <p class="feature-description">Равным образом консультация с широким активом в значительной степени обуславливает.</p>
-                </li>
-                <li>
-                    <h3 class="feature-title">Современные технологии</h3>
-                    <p class="feature-description">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
-                </li>
-            </ul>
+         
+        <section class="contacts">
+          <h2 class="contacts-title" id="contacts">Registration for a free phone consultation on the nuances of English UPE</h2>
         </section>
-   
-        <section class="direction">
-            <h2 class="direction-title">Чем мы занимаемся</h2>
-            <ul class="list">
-                <li><img src="./img/program.jpg" alt="Написание программ" width="370" height="294"></li>
-                <li><img src="./img/moby.jpg" alt="Создание мобильных приложений" width="370" height="294"></li>
-                <li><img src="./img/graph.jpg" alt="Графика" width="370" height="294"></li>
-            </ul>
-        </section>
-
-            <section class="team">
-                <h2 class="team-title">Наша команда</h2>
-                <ul class="list">
-                    <li class="team-card">
-                        <img src="./img/demyanenko.jpg" alt="Игорь Демьяненко" width="270" height="260">
-                        <h3 class="team-member">Игорь Демьяненко</h3>
-                        <p lang="en" class="member-job">Product Designer</p>
-                    </li>
-                    <li class="team-card">
-                        <img src="./img/repina.jpg" alt="Ольга Репина" width="270" height="260">
-                        <h3 class="team-member">Ольга Репина</h3>
-                        <p lang="en" class="member-job">Frontend Developer</p>
-                    </li>  
-                    <li class="team-card">                 
-                        <img src="./img/tarasov.jpg" alt="Николай Тарасов" width="270" height="260">
-                        <h3 class="team-member">Николай Тарасов</h3>
-                        <p lang="en" class="member-job">Marketing</p>
-                    </li>
-                    <li class="team-card">
-                        <img src="./img/yermakov.jpg" alt="Михаил Ермаков" width="270" height="260">
-                        <h3 class="team-member">Михаил Ермаков</h3>
-                        <p lang="en" class="member-job">UI Designer</p>
-                    </li>
-                </ul>
-            </section>
-    </main>
-
-    <footer class="footer">
-        <a href="/" class="logo link"><span class="logo-color-part">Web</span>Studio</a>
-        <address>
-            <ul class="list">
-                <li><a href="/" target="_blank" class="footer-address link">г. Киев, пр-т Леси Украинки, 26</a></li>
-                <li><a href="mailto:info@example.com" class="footer-email link">info@example.com</a></li>
-                <li><a href="tel:+380961111111" class="footer-phone link">+38 096 111 11 11</a></li>
-            </ul>
-        </address>
-    </footer>
+  </main>
 
 </body>
 </html>    
